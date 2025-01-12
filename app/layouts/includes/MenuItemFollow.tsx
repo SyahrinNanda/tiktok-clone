@@ -1,5 +1,6 @@
 import { MenuItemFollowCompTypes } from "@/app/types";
 import Link from "next/link";
+import { AiOutlineCheck } from "react-icons/ai";
 
 export default function MenuItemFollow({ user }: MenuItemFollowCompTypes) {
   return (
@@ -18,7 +19,15 @@ export default function MenuItemFollow({ user }: MenuItemFollowCompTypes) {
         <div className="lg:pl-2.5 lg:block hidden">
           <div className="flex items-center">
             <p className="font-bold text-[14px] truncate">{user?.name}</p>
+            <p className="ml-1 rounded-full bg-[#58D5EC] h-[14px] relative">
+              <AiOutlineCheck
+                className="relative p-[3px]"
+                color="#FFFFFF"
+                size="15"
+              />
+            </p>
           </div>
+          <p className="font-light text-[12px] text-gray-600">{user?.name}</p>
         </div>
       </Link>
     </>
