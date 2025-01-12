@@ -1,14 +1,13 @@
 "use client";
 
 import MainLayout from "./layouts/MainLayout";
-import UploadLayout from "./layouts/UploadLayout";
 
 export default function Home() {
   return (
     <>
-      <UploadLayout>
+      <MainLayout>
         <div className="">Home</div>
-      </UploadLayout>
+      </MainLayout>
     </>
   );
 }
